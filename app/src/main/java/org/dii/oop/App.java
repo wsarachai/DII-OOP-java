@@ -3,12 +3,11 @@
  */
 package org.dii.oop;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import org.dii.oop.lesson01.exercise03.Lesson;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Lesson exercise = new Lesson();
+        exercise.start();
     }
 }

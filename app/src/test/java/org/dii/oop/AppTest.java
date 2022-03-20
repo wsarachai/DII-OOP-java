@@ -3,12 +3,82 @@
  */
 package org.dii.oop;
 
+import org.dii.oop.lesson01.exercise01.Lesson;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    private final PrintStream standardOut = System.out;
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+
+    @BeforeEach
+    public void setUp() {
+        System.setOut(new PrintStream(outputStreamCaptor));
+    }
+
+    @AfterEach
+    public void tearDown() {
+        System.setOut(standardOut);
+    }
+
+    @Test void testExercise01() {
+        new Lesson().start();
+        assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
+                "The title of the book is Going Down Home with Daddy\n" +
+                        "Its author isStarling Lyons, Daniel Minter\n" +
+                        "It contains 400"));
+    }
+
+    @Test void testExercise02() {
+        new org.dii.oop.lesson01.exercise02.Lesson().start();
+        assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
+                "The title of the book is Milkman: A Novel\n" +
+                        "Its author isAnna Burns\n" +
+                        "It contains 200\n" +
+                        "\n" +
+                        "The title of the book is The Undefeated\n" +
+                        "Its author isKwame Alexander, Kadir Nelson\n" +
+                        "It contains 300"));
+    }
+
+    @Test void testExercise03() throws ClassNotFoundException, NoSuchFieldException {
+        org.dii.oop.lesson01.exercise03.Lesson lesson = new org.dii.oop.lesson01.exercise03.Lesson();
+        lesson.displayPerson();
+        assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
+                "Output:\n" +
+                        "Name:John Doe\n" +
+                        "Age:24"));
+
+        outputStreamCaptor.reset();
+
+        lesson.displayShape();
+        assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
+                "Output:\n" +
+                        "Width:100\n" +
+                        "Height:200"));
+
+        Class<?> clazz = Class.forName("org.dii.oop.lesson01.exercise03.Person");
+        assertNotNull(clazz);
+        Field fname = clazz.getDeclaredField("fname");
+        Field lname = clazz.getDeclaredField("lname");
+        Field age = clazz.getDeclaredField("lname");
+        assertNotNull(fname);
+        assertNotNull(lname);
+        assertNotNull(age);
+
+        clazz = Class.forName("org.dii.oop.lesson01.exercise03.Shape");
+        assertNotNull(clazz);
+        Field width = clazz.getDeclaredField("width");
+        Field height = clazz.getDeclaredField("height");
+        assertNotNull(width);
+        assertNotNull(height);
     }
 }
