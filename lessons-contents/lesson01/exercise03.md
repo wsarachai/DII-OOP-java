@@ -1,6 +1,6 @@
 ## [Lesson01](index.md) > Exercise03:
 
-1. Open class [App](../../app/src/main/java/org/dii/oop/App.java) in package ```org.dii.oop.App``` and edit the code as display below:
+1. Open class [App](../../app/src/main/java/org/dii/oop/App.java) in package `org.dii.oop.App` and edit the code as display below:
    ```
    package org.dii.oop;
 
@@ -14,12 +14,12 @@
    }
    ```
 
-2. Create class [Person](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Person.java) and [Shape](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Shape.java) and put it in the package ```org.dii.oop.lesson01.exercise03``` (You have to define all attributes as shown in the diagram):
+2. Create class [Person](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Person.java) and [Shape](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Shape.java) and put it in the package `org.dii.oop.lesson01.exercise03` (You have to define all attributes as shown in the diagram):
    
    <img src="person.png" /> <img src="shape.png" />
 
 
-3. Edit the method ```displayPerson()``` and ```displayShape()``` of class [Lesson](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Lesson.java) in package ```org.dii.oop.lesson01.exercise03``` to display the output as shown below:
+3. Edit the method `displayPerson()` and `displayShape()` of class [Lesson](../../app/src/main/java/org/dii/oop/lesson01/exercise03/Lesson.java) in package `org.dii.oop.lesson01.exercise03` to display the output as shown below:
 ```
 > Task :app:run
 Output:
