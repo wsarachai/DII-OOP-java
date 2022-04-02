@@ -1,4 +1,4 @@
-## [Lesson01](index.md) > Exercise04:
+## [Lesson02](index.md) > Exercise04:
 
 Create a Java program to find an area of shape.
 * Students must be designed the program to include at least three classes: `Circle`, `Rectangle`, and `Triangle` classes and place them in the package `org.dii.oop.lesson02.exercise04`.

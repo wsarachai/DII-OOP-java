@@ -1,4 +1,4 @@
-## [Lesson01](index.md) > Exercise03:
+## [Lesson02](index.md) > Exercise03:
 
 1. Open class [App](../../app/src/main/java/org/dii/oop/App.java) in package `org.dii.oop.App` and edit the code as display below: 
    ```
