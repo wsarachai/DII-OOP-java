@@ -14,7 +14,7 @@
    }
    ```
 
-2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson04/exercise01/Lesson.java) in package `org.dii.oop.lesson03.exercise01` and follow the instructions below:
+2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson04/exercise01/Lesson.java) in package `org.dii.oop.lesson04.exercise01` and follow the instructions below:
    - Write the car parking program, with the requirements below:
      * The cost of parking a car is 20 baths per hour.
      * The program starts by displaying the menu as shown below:
