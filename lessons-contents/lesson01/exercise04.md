@@ -8,8 +8,7 @@
 
    public class App {
      public static void main(String[] args) {
-       Lesson lesson = new Lesson();
-       lesson.start();
+       Lesson.run();
     }
    }
    ```
@@ -66,7 +65,7 @@
      } while(true);
      ```
 
-3. An example of the running program:
+3. Write the code in class [Lesson](../../app/src/main/java/org/dii/oop/lesson01/exercise04/Lesson.java) of package `org.dii.oop.lesson01.exercise04`. An example of the running program:
 ```
 // suppose your Student class is
 class Student {

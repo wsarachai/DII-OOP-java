@@ -4,7 +4,7 @@ package org.dii.oop.lesson02.exercise03;
 // import ???;
 
 public class Lesson {
-    public void start() {
+    public static void run() {
         // TODO: uncomment to test the program
 //        Mammal m = new Mammal();
 //        m.eat();

@@ -27,8 +27,7 @@ Create a Java program to find an area of shape.
 
    public class App {
      public static void main(String[] args) {
-       Lesson lesson = new Lesson();
-       lesson.start();
+       Lesson.run();
     }
    }
    ```

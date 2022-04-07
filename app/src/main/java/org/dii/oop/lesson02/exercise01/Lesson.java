@@ -5,7 +5,7 @@ package org.dii.oop.lesson02.exercise01;
  */
 public class Lesson {
 
-    public void start() {
+    public static void run() {
         // The program start here.
     }
 }

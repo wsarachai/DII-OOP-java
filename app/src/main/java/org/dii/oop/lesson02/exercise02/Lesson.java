@@ -6,7 +6,7 @@ package org.dii.oop.lesson02.exercise02;
 public class Lesson {
     static String root = "I'm available to all lines of code within my context";
 
-    public void start() {
+    public static void run() {
         String spy = "I'm a spy";
         {
             String insideCurlyBrackets="I'm an insider";

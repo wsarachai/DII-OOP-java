@@ -3,7 +3,6 @@
  */
 package org.dii.oop;
 
-import org.dii.oop.lesson01.exercise01.Lesson;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,7 +28,7 @@ class Lesson01Test {
     }
 
     @Test void testExercise01() {
-        new Lesson().start();
+        org.dii.oop.lesson01.exercise01.Lesson.run();
         assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
                 "The title of the book is Going Down Home with Daddy\n" +
                         "Its author isStarling Lyons, Daniel Minter\n" +
@@ -37,7 +36,7 @@ class Lesson01Test {
     }
 
     @Test void testExercise02() {
-        new org.dii.oop.lesson01.exercise02.Lesson().start();
+        org.dii.oop.lesson01.exercise02.Lesson.run();
         assertTrue(TestUtils.startWith(outputStreamCaptor.toString(),
                 "The title of the book is Milkman: A Novel\n" +
                         "Its author isAnna Burns\n" +

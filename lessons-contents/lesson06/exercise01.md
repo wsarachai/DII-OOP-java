@@ -8,13 +8,12 @@
 
    public class App {
      public static void main(String[] args) {
-       Lesson lesson = new Lesson();
-       lesson.start();
+       lesson.run();
     }
    }
    ```
 
-2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Lesson.java) in package `org.dii.oop.lesson06.exercise01` and follow the instructions below:
+2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson07/exercise01/Lesson.java) in package `org.dii.oop.lesson07.exercise01` and follow the instructions below:
    - Create a new `abstract` class name [`Shape`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Shape.java) and define the `name` attribute to store the name of the shape, and the `numSide` attribute to store a number of shape sides, the access modifier of these two attributes is `private`.
    - Define the abstract methods of the class `Shape`: `public abstract double getArea()` and `public abstract double getPerimeter()` to return the area and perimeter of its own shape.
    - Create a new `interface` name [`Resizeable`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Resizeable.java) and define the method name `void resize()`.
