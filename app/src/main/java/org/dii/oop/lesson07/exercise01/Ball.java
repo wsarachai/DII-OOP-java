@@ -3,20 +3,21 @@ package org.dii.oop.lesson07.exercise01;
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
+import java.util.Random;
 
 public class Ball {
-    private static int id = 0;
     private final ImageIcon imageIcon;
     private int x;
     private int y;
-    private int speed = 1;
     private int dx = 1;
     private int dy = 1;
+    private int speed = 1;
 
     public Ball(URL url, int width, int height) {
         imageIcon = new ImageIcon(url);
-        x = (imageIcon.getIconWidth() * id) % (width-imageIcon.getIconWidth());
-        y = (imageIcon.getIconHeight() * id++) % (height- imageIcon.getIconHeight());
+        Random random = new Random();
+        x = random.nextInt(width-imageIcon.getIconWidth());
+        y = random.nextInt(height- imageIcon.getIconHeight());
     }
 
     public void paint(Graphics g) {
