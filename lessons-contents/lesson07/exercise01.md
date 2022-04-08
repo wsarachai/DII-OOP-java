@@ -25,7 +25,8 @@ Make the ball bounce left and right on the border of window frame.
    - In our Pinball application, we created `org.dii.oop.lesson07.exercise01.PinballApp` class extends the `javax.swing.JFrame` class which inherit all parent behavior class, so we do not write all code to manage GUI applications just write the code needed for our program.
    - The `javax.swing.JPanel` class is a container that can store a group of components. The main task of JPanel is to organize components, various layouts can be set in JPanel which provides a better organization of components.
    - In our Pinball application, we created `org.dii.oop.lesson07.exercise01.BackgroundPanel` class extends the `javax.swing.JPanel` class which inherit all parent behavior classes and we use this panel to draw the ball image.
-   - Create a new Ball class to keep all information of ball.
+   - Uncomment the code to make the ball move.
+   - After the is moved by the previous step, then organize the code program by creating a new Ball class to keep all information related to the ball in one place including attributes and methods.
      ```
      public class Ball {
        private final ImageIcon imageIcon;
@@ -43,18 +44,13 @@ Make the ball bounce left and right on the border of window frame.
        }
 
        public void paint(Graphics g) {
-         g.drawImage(imageIcon.getImage(), x, y, null);
+         // TODO: Paint the ball image according to the x and y positions.
+         
        }
 
        public void move(int width, int height) {
-         x+=(speed*dx);
-         if (x<=0 || x>=width-imageIcon.getIconWidth()) {
-           dx = -dx;
-         }
-         y+=(speed*dy);
-         if (y<=0 || y>=height-imageIcon.getIconHeight()) {
-           dy = -dy;
-         }
+         // Move the ball move within the boundary of the application window.
+         
        }
 
        public void setSpeed(int speed) {
