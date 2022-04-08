@@ -5,38 +5,55 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
+import java.util.Vector;
 
 public class BackgroundPanel extends JPanel implements ActionListener {
-    ImageIcon icon;
-    private int x;
-    private int speedX = 1;
-    private int y;
-    private int speedY = 1;
+    private final Vector<Ball> balls = new Vector<>();
+    private int speed = 1;
 
     public BackgroundPanel() {
-        setPreferredSize(new Dimension(300, 400));
+        Dimension dimension = new Dimension(300, 400);
+        setSize(dimension);
+        setPreferredSize(dimension);
         setBackground(Color.white);
-        URL url = getClass().getResource("images/img1.png");
-
-        assert url != null;
-        icon = new ImageIcon(url);
+        setNumOfBall(1);
     }
 
     @Override
     protected void paintComponent(Graphics g) {
-        g.drawImage(icon.getImage(), x, y, null);
+        for (Ball ball : balls) {
+            ball.paint(g);
+        }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        x+=speedX;
-        if (x<=0 || x>=getWidth()-icon.getIconWidth()) {
-            speedX = -speedX;
-        }
-        y+=speedY;
-        if (y<=0 || y>=getHeight()-icon.getIconHeight()) {
-            speedY = -speedY;
+        for (Ball ball : balls) {
+            ball.move(getWidth(), getHeight());
         }
         repaint();
+    }
+
+    public void setNumOfBall(int numOfBall) {
+        balls.clear();
+        for (int i=0; i<numOfBall; i++) {
+            URL url = getClass().getResource("images/img" + (i%3) + ".png");
+            assert url != null;
+            Ball ball = new Ball(url, getWidth(), getHeight());
+            ball.setSpeed(speed);
+            balls.addElement(ball);
+        }
+    }
+
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+        for (Ball ball : balls) {
+            ball.setSpeed(speed);
+        }
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 }

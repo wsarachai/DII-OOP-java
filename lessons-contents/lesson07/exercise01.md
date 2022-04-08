@@ -17,7 +17,8 @@ Make the ball bounce left and right on the border of window frame.
 
 2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson07/exercise01/Lesson.java) in package `org.dii.oop.lesson07.exercise01` and follow the instructions below:
    - The Pinball game is the GUI application in Java as shown below: 
-     ![img.png](img.png)
+     
+     ![img_1.png](img1.png)
 
      Note: we do not dig into all frameworks of GUI application development, we will use some classes of Swing framework to make more understand our objective of the OOP concept.
    - The `javax.swing.JFrame` class is a type of container which inherits the `java.awt.Frame` class. JFrame works like the main window where components like labels, buttons, textfields are added to create a GUI.
@@ -28,5 +29,9 @@ Make the ball bounce left and right on the border of window frame.
 
 3. More requirements:
    - Add more type of ball `images/img2.png` and `images/img3.png`.
-   - 
+   - When the user types a number in TextField and then presses the OK button, the program should display the balls according to the typed number in the JPanel bounce around the region of the program.
+   - Each ball appears at a random position within the boundary of the program.
+   - Adjusting the `JSlider` control (![img.png](img.png)) will change the speed of all balls.
+
+     ![img2.png](img2.png)
    
