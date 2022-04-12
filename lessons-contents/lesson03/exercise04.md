@@ -113,7 +113,7 @@
      Do you want to continue [y/n]:
      ```
 
-3. Running the program
+3. Run the code.
    - An example when the user chooses the number `1`.
      ```
      > Task :app:run

@@ -14,7 +14,7 @@
    ```
 
 2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson03/exercise02/Lesson.java) in package `org.dii.oop.lesson03.exercise02` and follow the instructions below:
-   - Write a program to print the names of students by creating a `org.dii.oop.lesson03.exercise02.Student` class. If no name is passed while creating an object of the [Student](../../app/src/main/java/org/dii/oop/lesson03/exercise02/Student.java) class, then the name should be "Unknown", otherwise the name should be equal to the String value passed while creating an object of the Student class.
+   - Write a program to print the names of students, So, you have to create a `Student` class and place it in the `org.dii.oop.lesson03.exercise02` package. If no argument name is passed to the constructor while creating an object of the `Student` class, then the name should be "Unknown", otherwise the name should be equal to the String value passed while creating an object of the `Student` class.
    ```
    ...
    
@@ -29,7 +29,7 @@
    }
    ```
 
-3. The output program
+3. Run the code.
    ```
    > Task :app:run
    XYZ

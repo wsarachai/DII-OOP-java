@@ -1,7 +1,5 @@
 package org.dii.oop.lesson06.exercise02;
 
-import org.dii.oop.lesson06.exercise01.*;
-import org.dii.oop.lesson06.exercise01.Rectangle;
 import org.dii.oop.lesson06.exercise01.Shape;
 
 import javax.swing.*;
@@ -89,15 +87,19 @@ public class ShapeApp extends JFrame implements ActionListener {
             if ("Circle".trim().equals(choice)) {
                 String strRadius = textField01.getText();
                 double radius = Double.parseDouble(strRadius);
-                listModel.addElement(new Circle(radius));
+                // TODO: uncomment this line
+                // listModel.addElement(new Circle(radius));
             }
             else if ("Rectangle".trim().equals(choice)) {
                 String strWidth = textField01.getText();
                 String strHigh = textField02.getText();
                 double width = Double.parseDouble(strWidth);
                 double high = Double.parseDouble(strHigh);
-                listModel.addElement(new Rectangle(width, high));
+                // TODO: uncomment this line
+                // listModel.addElement(new Rectangle(width, high));
             }
+            // TODO: write the other shape classes behavior here
+
         } else if (e.getSource() instanceof JComboBox) {
             String choice = (String) comboBox.getSelectedItem();
             if ("Circle".equals(choice)) {
@@ -113,6 +115,7 @@ public class ShapeApp extends JFrame implements ActionListener {
                 label02.setVisible(true);
                 textField02.setVisible(true);
             }
+            // TODO: write the other shape classes behavior here.
         }
     }
 }

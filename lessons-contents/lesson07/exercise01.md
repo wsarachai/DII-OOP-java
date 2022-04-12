@@ -21,12 +21,10 @@ Make the ball bounce left and right on the border of window frame.
      ![img_1.png](img1.png)
 
      Note: we do not dig into all frameworks of GUI application development, we will use some classes of Swing framework to make more understand our objective of the OOP concept.
-   - The `javax.swing.JFrame` class is a type of container which inherits the `java.awt.Frame` class. JFrame works like the main window where components like labels, buttons, textfields are added to create a GUI.
-   - In our Pinball application, we created `org.dii.oop.lesson07.exercise01.PinballApp` class extends the `javax.swing.JFrame` class which inherit all parent behavior class, so we do not write all code to manage GUI applications just write the code needed for our program.
-   - The `javax.swing.JPanel` class is a container that can store a group of components. The main task of JPanel is to organize components, various layouts can be set in JPanel which provides a better organization of components.
-   - In our Pinball application, we created `org.dii.oop.lesson07.exercise01.BackgroundPanel` class extends the `javax.swing.JPanel` class which inherit all parent behavior classes and we use this panel to draw the ball image.
-   - Uncomment the code to make the ball move.
-   - After the is moved by the previous step, then organize the code program by creating a new Ball class to keep all information related to the ball in one place including attributes and methods.
+   - Created the `org.dii.oop.lesson07.exercise01.PinballApp` class extends the `javax.swing.JFrame` class which inherit all parent behavior class, so we do not write all code to manage GUI applications just write the code needed for our program.
+   - Created the `org.dii.oop.lesson07.exercise01.BackgroundPanel` class extends the `javax.swing.JPanel` class which inherit all parent behavior classes and we use this panel to draw the ball image.
+   - Find every `TODO:` tag in the code and uncomment the code to make the ball move.
+   - After the previous step, then will organize the code program by creating a new Ball class to keep all information related to the ball in one place including attributes and methods.
      ```
      public class Ball {
        private final ImageIcon imageIcon;
@@ -60,7 +58,7 @@ Make the ball bounce left and right on the border of window frame.
      ```
    - **_The task is to use your knowledge of OOP to understand the code program and modify to the game to do more requirements._**
 
-3. More requirements (No points, you can choose to do this exam or not.):
+3. More requirements:
    - Add more type of ball `images/img2.png` and `images/img3.png`.
    - When the user types a number in TextField and then presses the OK button, the program should display the balls according to the typed number in the JPanel bounce around the region of the program.
    - Each ball appears at a random position within the boundary of the program.

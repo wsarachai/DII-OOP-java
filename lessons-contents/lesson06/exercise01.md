@@ -20,11 +20,11 @@
    - Create class [`Circle`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Circle.java) and make it inherit from the [`Shape`](../../app/src/main/java/org/dii/oop/lesson05/exercise01/Shape.java) class with its constructor having a parameter for its radius and `implements` with [`Resizeable`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Resizeable.java) interface.
    - Create class [`RightTriangle`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/RightTriangle.java) and make it inherit from the [`Shape`](../../app/src/main/java/org/dii/oop/lesson05/exercise01/Shape.java) class with its constructor having a parameter for its side (base and high) and `implements` with [`Resizeable`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Resizeable.java) interface.
    - Create class [`Rectangle`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Rectangle.java) and make it inherit from the [`Shape`](../../app/src/main/java/org/dii/oop/lesson05/exercise01/Shape.java) class with its constructor having a parameter for its side (width and high) and `implements` with [`Resizeable`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Resizeable.java) interface.
-   - Create class [`Square`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Square.java) and make it inherit from the [`Rectangle`](../../app/src/main/java/org/dii/oop/lesson05/exercise01/Rectangle.java) class with its constructor having a parameter for its side (suppose side) calling the constructor of its parent class as `super(side, side)`. Print the area and perimeter to output.
+   - Create class [`Square`](../../app/src/main/java/org/dii/oop/lesson06/exercise01/Square.java) and make it inherit from the [`Rectangle`](../../app/src/main/java/org/dii/oop/lesson05/exercise01/Rectangle.java) class with its constructor having a parameter for its side (suppose side) calling the constructor of its parent class as `super(side, side)`.
    - The abstract method defined in the superclass must be implemented in the subclass according to its behavior.
 
 
-3. The output of the program:
+3. Run the code:
    ```
    1. Circle
    2. Rectangle

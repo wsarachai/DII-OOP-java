@@ -13,11 +13,13 @@
    }
    ```
 
+
 2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson03/exercise01/Lesson.java) in package `org.dii.oop.lesson03.exercise01` and follow the instructions below:
-   - Write a constructor in the Car class given below that initializes the brand class field with the string “Ford”.
+   - Write a constructor in the [`Car`](../../app/src/main/java/org/dii/oop/lesson03/exercise01/Car.java) class that initializes the `brand` field with the string “Ford”.
      Call the getBrand() method in the [run](../../app/src/main/java/org/dii/oop/lesson03/exercise01/Lesson.java) method of the [Lesson](../../app/src/main/java/org/dii/oop/lesson03/exercise01/Lesson.java) class  and store the value of the brand in a variable, and print the value.
 
-3. The output program
+
+3. Run the code.
    ```
    > Task :app:run
    Car's brand is Ford.

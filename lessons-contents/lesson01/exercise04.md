@@ -16,7 +16,7 @@
 2. Design your own [`org.dii.oop.lesson01.exercise04.Student`](../../app/src/main/java/org/dii/oop/lesson01/exercise04/Student.java) class with the following requirements.
    * Instance your student object by getting the student attributes from the command line.
      ```
-     // Command for getting the input from a keyboard
+     // Command for getting the input from a keyboard using `Scanner` class
      ...
      import java.util.Scanner;
      ...
@@ -26,13 +26,12 @@
      student.xxxx = inputDate;
      ...
      ```
-   * Store the new object in the collection by using the Vector class.
+   * Create a student object one by one and store it in the collection by using the Vector class.
      ```
      ...
      Vector<Student> students = new Vector<>();
      ...
-     students.add(student1);
-     students.add(student2);
+     students.add(student);
      ...
      ```
    * Display all student objects in the collection by using the following code:

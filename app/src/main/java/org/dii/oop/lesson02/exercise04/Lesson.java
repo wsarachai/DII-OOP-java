@@ -5,6 +5,7 @@ package org.dii.oop.lesson02.exercise04;
  */
 public class Lesson {
     public static void run() {
-        // The program start here.
+        // TODO: Write the code program here.
+
     }
 }

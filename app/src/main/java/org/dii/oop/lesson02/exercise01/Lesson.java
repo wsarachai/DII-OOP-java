@@ -6,6 +6,6 @@ package org.dii.oop.lesson02.exercise01;
 public class Lesson {
 
     public static void run() {
-        // The program start here.
+        // TODO: The program start here.
     }
 }

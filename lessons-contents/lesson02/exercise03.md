@@ -33,7 +33,7 @@
 3. Edit class  [Lesson](../../app/src/main/java/org/dii/oop/lesson02/exercise03/Lesson.java) in package `org.dii.oop.lesson02.exercise03` and follow the instructions.
 
 
-4. The output:
+4. Run the code:
 ```
 > Task :app:run
 Mammal eats

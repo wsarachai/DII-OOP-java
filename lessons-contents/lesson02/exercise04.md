@@ -2,7 +2,7 @@
 
 Create a Java program to find an area of shape.
 * Students must be designed the program to include at least three classes: `Circle`, `Rectangle`, and `Triangle` classes and place them in the package `org.dii.oop.lesson02.exercise04`.
-* Designed all shape classes to have `callArea()` method. The method does its own behavior of their class, for example, the `calArea()` method of the Circle class must be calculated the area of a circle shape.
+* Designed all shape classes to have `callArea()` method. The method does its own behavior of their class, for example, the `calArea()` method of the Circle class must be calculated the area of a circle shape, and for the Triang class, the `calArea()` method must be calculated the area of a triangle shape.
 * Students can use build-in class `Scanner` to get the keyboard input as shown the example below:
   ```
   Scanner in = new Scanner(System.in);
@@ -35,7 +35,7 @@ Create a Java program to find an area of shape.
 2. Edit class  [Lesson](../../app/src/main/java/org/dii/oop/lesson02/exercise04/Lesson.java) in package `org.dii.oop.lesson02.exercise04` to write the program.
 
 
-3. The example output:
+3. Run the code:
 ```
 > Task :app:run
 1. Circle

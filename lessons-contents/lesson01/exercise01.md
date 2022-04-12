@@ -32,7 +32,7 @@
      System.out.println("The title of the book is " + myBook.title + "\nIts author is" + myBook.author + "\nIt contains " + myBook.numberOfPages);
      ```   
 
-3. The output:
+3. Run the code:
 ```
 > Task :app:run
 The title of the book is Going Down Home with Daddy

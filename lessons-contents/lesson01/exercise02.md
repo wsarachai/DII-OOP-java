@@ -24,7 +24,7 @@
      - numberOfPages: 300
 
 
-3. The program will print the information to output as shown below:
+3. Run the code and the program will print the information to output as shown below:
 ```
 > Task :app:run
 The title of the book is Milkman: A Novel
