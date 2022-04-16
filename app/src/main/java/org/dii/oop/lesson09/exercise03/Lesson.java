@@ -1,29 +1,23 @@
 package org.dii.oop.lesson09.exercise03;
 
 public class Lesson {
-
-    private static class Worker extends Thread {
-        @Override
-        public void run() {
-            doTask();
-        }
-    }
-
     public static void run() {
-        Worker worker1 = new Worker();
-        Worker worker2 = new Worker();
-        Worker worker3 = new Worker();
-        worker1.start();
-        worker2.start();
-        worker3.start();
+        Beverage beverage = new Espresso();
+        System.out.println(beverage.getDescription()
+                + " $" + beverage.getCost());
 
-        doTask();
-    }
+        Beverage beverage2 = new DarkRoast();
+        beverage2 = new Mocha(beverage2);
+        beverage2 = new Mocha(beverage2);
+        beverage2 = new Whip(beverage2);
+        System.out.println(beverage2.getDescription()
+                + " $" + beverage2.getCost());
 
-    private static void doTask() {
-        ChocolateBoiler boiler = ChocolateBoiler.getInstance();
-        boiler.fill();
-        boiler.boil();
-        boiler.drain();
+        Beverage beverage3 = new HouseBlend();
+        beverage3 = new Soy(beverage3);
+        beverage3 = new Mocha(beverage3);
+        beverage3 = new Whip(beverage3);
+        System.out.println(beverage3.getDescription()
+                + " $" + beverage3.getCost());
     }
 }

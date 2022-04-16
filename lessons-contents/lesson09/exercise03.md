@@ -1,4 +1,4 @@
-## [Lesson09](index.md) > Exercise01
+## [Lesson09](index.md) > Exercise03
 
 1. Open class [App](../../app/src/main/java/org/dii/oop/App.java) in package `org.dii.oop.App` and edit the code as display below: 
    ```
@@ -13,5 +13,5 @@
    }
    ```
 
-2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson09/exercise01/Lesson.java) in package `org.dii.oop.lesson09.exercise01` and follow the instructions below:
-   - Update the SimUDuck game by applying the strategy pattern.
+2. Edit class [Lesson](../../app/src/main/java/org/dii/oop/lesson09/exercise03/Lesson.java) in package `org.dii.oop.lesson09.exercise03` and follow the instructions below:
+   - From the decorator pattern, write the design classes and test the code from the PPT.

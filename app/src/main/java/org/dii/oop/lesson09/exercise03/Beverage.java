@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise02;
+package org.dii.oop.lesson09.exercise03;
 
 /*
  * The beverage is an abstract class with

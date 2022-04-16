@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise02;
+package org.dii.oop.lesson09.exercise03;
 
 public class Soy extends CondimentDecorator {
     Beverage beverage;

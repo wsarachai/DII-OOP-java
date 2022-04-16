@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise02;
+package org.dii.oop.lesson09.exercise03;
 
 public class HouseBlend extends Beverage {
     @Override
