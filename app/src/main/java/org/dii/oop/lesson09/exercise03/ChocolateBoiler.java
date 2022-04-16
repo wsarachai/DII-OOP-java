@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise01;
+package org.dii.oop.lesson09.exercise03;
 
 public class ChocolateBoiler {
     private static volatile ChocolateBoiler uniqueInstance;

@@ -1,29 +1,25 @@
 package org.dii.oop.lesson09.exercise01;
 
-public class Lesson {
+import javax.swing.*;
 
-    private static class Worker extends Thread {
-        @Override
-        public void run() {
-            doTask();
-        }
+public class Lesson extends JFrame {
+    protected final int FPS = 1000/120;
+
+    public Lesson() {
+        super("Duck Simulator");
+        DuckSimulator duckSimulatorPanel = new DuckSimulator();
+
+        add(duckSimulatorPanel);
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        pack();
+
+        Timer timer = new Timer(FPS, duckSimulatorPanel);
+        timer.start();
     }
 
     public static void run() {
-        Worker worker1 = new Worker();
-        Worker worker2 = new Worker();
-        Worker worker3 = new Worker();
-        worker1.start();
-        worker2.start();
-        worker3.start();
-
-        doTask();
-    }
-
-    private static void doTask() {
-        ChocolateBoiler boiler = ChocolateBoiler.getInstance();
-        boiler.fill();
-        boiler.boil();
-        boiler.drain();
+        Lesson lesson = new Lesson();
+        lesson.setVisible(true);
     }
 }

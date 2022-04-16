@@ -1,6 +1,6 @@
 package org.dii.oop;
 
-import org.dii.oop.lesson09.exercise03.Lesson;
+import org.dii.oop.lesson09.exercise01.Lesson;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {

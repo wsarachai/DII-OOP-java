@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise03;
+package org.dii.oop.lesson09.exercise02;
 
 /*
  * First, we need to be interchangeable with a Beverage,

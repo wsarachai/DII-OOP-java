@@ -1,7 +1,7 @@
-package org.dii.oop.lesson09.exercise02.fly;
+package org.dii.oop.lesson09.exercise01.fly;
 
 import org.dii.oop.App;
-import org.dii.oop.lesson09.exercise02.duck.Duck;
+import org.dii.oop.lesson09.exercise01.duck.Duck;
 
 import javax.swing.*;
 import java.awt.*;

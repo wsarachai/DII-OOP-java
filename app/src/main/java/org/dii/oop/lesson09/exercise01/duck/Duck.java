@@ -1,9 +1,9 @@
-package org.dii.oop.lesson09.exercise02.duck;
+package org.dii.oop.lesson09.exercise01.duck;
 
 import org.dii.oop.App;
-import org.dii.oop.lesson09.exercise02.DuckSimulator;
-import org.dii.oop.lesson09.exercise02.fly.FlyBehavior;
-import org.dii.oop.lesson09.exercise02.quack.QuackBehavior;
+import org.dii.oop.lesson09.exercise01.DuckSimulator;
+import org.dii.oop.lesson09.exercise01.fly.FlyBehavior;
+import org.dii.oop.lesson09.exercise01.quack.QuackBehavior;
 
 import javax.swing.*;
 import java.awt.*;

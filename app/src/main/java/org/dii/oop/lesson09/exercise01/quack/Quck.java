@@ -1,17 +1,17 @@
-package org.dii.oop.lesson09.exercise02.quack;
+package org.dii.oop.lesson09.exercise01.quack;
 
 import org.dii.oop.App;
-import org.dii.oop.lesson09.exercise02.duck.Duck;
+import org.dii.oop.lesson09.exercise01.duck.Duck;
 
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
-public class Squeak extends QuackBehavior {
+public class Quck extends QuackBehavior {
     private final ImageIcon image;
 
-    public Squeak() {
-        URL url = App.class.getResource("images/squeak.png");
+    public Quck() {
+        URL url = App.class.getResource("images/quack.png");
         assert url != null;
         this.image = new ImageIcon(url);
     }

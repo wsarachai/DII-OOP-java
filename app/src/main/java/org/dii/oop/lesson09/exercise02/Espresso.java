@@ -1,4 +1,4 @@
-package org.dii.oop.lesson09.exercise03;
+package org.dii.oop.lesson09.exercise02;
 
 public class Espresso extends Beverage {
     @Override
