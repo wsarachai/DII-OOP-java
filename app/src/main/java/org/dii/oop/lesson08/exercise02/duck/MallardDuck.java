@@ -1,8 +1,7 @@
-package org.dii.oop.lesson08.exercise01.duck;
+package org.dii.oop.lesson08.exercise02.duck;
 
-import org.dii.oop.lesson08.exercise01.fly.FlyWithWings;
-import org.dii.oop.lesson08.exercise01.quack.Quck;
-import org.dii.oop.lesson08.exercise01.quack.Squeak;
+import org.dii.oop.lesson08.exercise02.fly.FlyWithWings;
+import org.dii.oop.lesson08.exercise02.quack.Squeak;
 
 public class MallardDuck extends Duck {
     public MallardDuck() {

@@ -1,7 +1,7 @@
-package org.dii.oop.lesson08.exercise01.duck;
+package org.dii.oop.lesson08.exercise02.duck;
 
-import org.dii.oop.lesson08.exercise01.fly.FlyNoWay;
-import org.dii.oop.lesson08.exercise01.quack.MuteQuack;
+import org.dii.oop.lesson08.exercise02.fly.FlyNoWay;
+import org.dii.oop.lesson08.exercise02.quack.MuteQuack;
 
 public class DecoyDuck extends Duck {
     public DecoyDuck() {

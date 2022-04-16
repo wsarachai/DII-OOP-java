@@ -17,8 +17,10 @@ public abstract class Duck {
     private int dy;
     private final int speed;
     private final ImageIcon image;
+
     protected FlyBehavior flyBehavior;
     protected QuackBehavior quackBehavior;
+
     private final Random random;
 
     public Duck(String resourceUrl) {
@@ -35,24 +37,23 @@ public abstract class Duck {
     }
 
     public void display(Graphics g) {
-        if (performFly(g)) {
+        if (flyBehavior.isFlying()) {
+            performFly(g);
+        } else {
             g.drawImage(image.getImage(), x, y, null);
         }
-        performQuack(g);
+
+        if (quackBehavior.isQuacking()) {
+            performQuack(g);
+        }
     }
 
-    public boolean performFly(Graphics g) {
-        if (flyBehavior.isFlying()) {
-            flyBehavior.fly(this, g);
-            return false;
-        }
-        return true;
+    public void performFly(Graphics g) {
+        flyBehavior.fly(this, g);
     }
 
     public void performQuack(Graphics g) {
-        if (quackBehavior.isQuacking()) {
-            quackBehavior.quack(this, g);
-        }
+        quackBehavior.quack(this, g);
     }
 
     public void setFlyBehavior(FlyBehavior fb) {

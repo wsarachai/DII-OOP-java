@@ -1,6 +1,6 @@
-package org.dii.oop.lesson08.exercise01.quack;
+package org.dii.oop.lesson08.exercise02.quack;
 
-import org.dii.oop.lesson08.exercise01.duck.Duck;
+import org.dii.oop.lesson08.exercise02.duck.Duck;
 
 import java.awt.*;
 

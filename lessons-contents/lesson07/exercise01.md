@@ -6,7 +6,7 @@ Make the ball bounce left and right on the border of window frame.
    ```
    package org.dii.oop;
 
-   import org.dii.oop.lesson06.exercise01.Lesson;
+   import org.dii.oop.lesson07.exercise01.Lesson;
 
    public class App {
      public static void main(String[] args) {
