@@ -1,8 +1,12 @@
 package org.dii.oop.lesson07.exercise01;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class PinballApp extends JFrame {
+public class PinballApp extends JFrame implements ActionListener, ChangeListener {
     protected final int FPS = 1000/120;
     private final BackgroundPanel panel;
     private final JTextField textField;
@@ -33,24 +37,28 @@ public class PinballApp extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
 
+        button.addActionListener(this);
+        ballSpeed.addChangeListener(this);
+
         Timer timer = new Timer(FPS, panel);
         timer.start();
     }
     // TODO: uncomment this and fixed the error. This function will call when the user click the button.
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        String strNumOfBall = textField.getText();
-//        System.out.println("Number of ball: " + strNumOfBall);
-//    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String strNumOfBall = textField.getText();
+        System.out.println("Number of ball: " + strNumOfBall);
+        panel.setNumOfBall(Integer.parseInt(strNumOfBall));
+    }
 
     // TODO: uncomment this and fixed the error. This function will call when the user changes the slider.
-//    @Override
-//    public void stateChanged(ChangeEvent e) {
-//        JSlider source = (JSlider)e.getSource();
-//        if (!source.getValueIsAdjusting()) {
-//            int speed = source.getValue();
-//            panel.setSpeed(speed);
-//            labelSpeed.setText("Speed: " + speed);
-//        }
-//    }
+    @Override
+    public void stateChanged(ChangeEvent e) {
+        JSlider source = (JSlider)e.getSource();
+        if (!source.getValueIsAdjusting()) {
+            int speed = source.getValue();
+            panel.setSpeed(speed);
+            labelSpeed.setText("Speed: " + speed);
+        }
+    }
 }

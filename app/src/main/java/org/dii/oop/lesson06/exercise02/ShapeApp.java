@@ -114,6 +114,25 @@ public class ShapeApp extends JFrame implements ActionListener {
                 textField02.setText("");
                 label02.setVisible(true);
                 textField02.setVisible(true);
+            } else if ("Right triangle".equals(choice)) {
+                label01.setText("Base:");
+                label02.setText("High:");
+                textField01.setText("");
+                textField02.setText("");
+                label02.setVisible(true);
+                textField02.setVisible(true);
+            } else if ("Square".equals(choice)) {
+                label01.setText("Side:");
+                textField01.setText("");
+                textField02.setText("");
+                label02.setVisible(false);
+                textField02.setVisible(false);
+            } else if ("Resize shape".equals(choice)) {
+                label01.setText("Side:");
+                textField01.setText("");
+                textField02.setText("");
+                label02.setVisible(false);
+                textField02.setVisible(false);
             }
             // TODO: write the other shape classes behavior here.
         }
