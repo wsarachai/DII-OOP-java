@@ -4,7 +4,7 @@
    ```
    package org.dii.oop;
 
-   import org.dii.oop.lesson01.exercise00.Lesson;
+   import org.dii.oop.lesson00.exercise01.Lesson;
 
    public class App {
      public static void main(String[] args) {
