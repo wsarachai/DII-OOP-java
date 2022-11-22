@@ -4,9 +4,13 @@ import java.io.*;
 
 public class Lesson {
 
-    public static void run() {
+    public static void run()  throws IOException {
+        // mac os version
+        File inputFile = new File("org/dii/oop/lesson00/exercise02/file_name.txt");
 
-        File inputFile = new File("file_name.txt");
+        // window version
+        //File inputFile = new File("org\\dii\\oop\\lesson00\\exercise02\\file_name.txt");
+
         if( ! inputFile.exists())
         {
             System.out.println("File file_name.txt not found ");
