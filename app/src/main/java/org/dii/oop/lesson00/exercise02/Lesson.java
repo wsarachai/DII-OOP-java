@@ -9,10 +9,10 @@ public class Lesson {
         System.out.println("Hello Exercise 2 !");
 
         // mac os version
-        File inputFile = new File("org/dii/oop/lesson00/exercise02/file_name.txt");
+        //File inputFile = new File("org/dii/oop/lesson00/exercise02/file_name.txt");
 
         // window version
-        //File inputFile = new File("org\\dii\\oop\\lesson00\\exercise02\\file_name.txt");
+        File inputFile = new File("org\\dii\\oop\\lesson00\\exercise02\\sdlc.txt");
 
         if( ! inputFile.exists())
         {
