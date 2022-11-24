@@ -5,6 +5,9 @@ import java.io.*;
 public class Lesson {
 
     public static void run()  throws IOException {
+
+        System.out.println("Hello Exercise 2 !");
+
         // mac os version
         File inputFile = new File("org/dii/oop/lesson00/exercise02/file_name.txt");
 

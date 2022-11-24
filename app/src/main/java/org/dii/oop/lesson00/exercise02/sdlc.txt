@@ -1,0 +1,13 @@
+SDLC Meaning (Software Development Life Cycle)
+
+An SDLC (software development life cycle) is a big-picture breakdown of all the steps involved in software creation (planning, coding, testing, deploying, etc.). Companies define custom SDLCs to create a predictable, iterative framework that guides the team through all major stages of development.
+
+The character and the exact number of phases in an SDLC vary between businesses and projects. The most common models are variations on the following steps:
+
+Requirement analysis.
+In-depth planning.
+Product design.
+Coding.
+Testing.
+Deployment.
+Post-production maintenance.
