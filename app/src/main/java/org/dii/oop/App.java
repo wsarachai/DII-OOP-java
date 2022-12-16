@@ -1,12 +1,12 @@
 package org.dii.oop;
 
 
-import org.dii.oop.lesson00.exercise04.Lesson;
+import org.dii.oop.lesson00.exercise01.Lesson;
+
+import java.io.FileNotFoundException;
 
 public class App {
-    public static void main(String[] args)  {
-
-        System.out.println("Hello");
+    public static void main(String[] args) throws FileNotFoundException {
         Lesson.run();
     }
 }
