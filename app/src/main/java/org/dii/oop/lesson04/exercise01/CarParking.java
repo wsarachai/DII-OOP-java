@@ -20,10 +20,11 @@ public class CarParking {
 
     public Receipt issuedReceipt(String plateNumber) {
         for (Receipt receipt : receipts) {
-            if (receipt.getPlateNumber().equals(plateNumber)) {
-                receipt.setReceiptDate(new Date());
-                return receipt;
-            }
+            // TODO: uncomment this statements
+//            if (receipt.getPlateNumber().equals(plateNumber)) {
+//                receipt.setReceiptDate(new Date());
+//                return receipt;
+//            }
         }
         return null;
     }
